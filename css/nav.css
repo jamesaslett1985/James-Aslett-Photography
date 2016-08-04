@@ -1,0 +1,131 @@
+nav {
+  text-align: center;
+  margin: 6px 0 0;
+}
+
+/*Hide all nav icons except the hamburger*/
+nav li:not(.icon) {
+	display: none;	
+}
+
+/*Positioning for hamburger*/
+.icon {
+	position: absolute;
+	top: 25px;
+	right: 15px;
+}
+
+.icon a:link {
+	color: white;
+	
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+  ul.topnav.responsive {
+	  position: absolute;
+	  width: 100%;
+	  z-index: 99;
+	  margin: 0;
+	  top: 68px;
+	  height: 210px;
+  }
+  
+  ul.topnav.responsive li.icon {
+    position: absolute;
+	top: -64px;
+	right: 9px;
+
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  
+  
+  ul.topnav.responsive li a {
+	position: relative;
+    display: block;
+    text-align: center;
+	margin-top: 10px;
+	padding: 10px 5px;
+	
+  }
+
+.topnav.responsive {
+	background-color: #252c32;
+}
+
+@media screen and (min-width: 400px) {
+	/*Show all nav icons on wider screens and hide hamburger*/
+nav li:not(.icon) {
+	display: inline-block;	
+}
+
+.icon {
+	display: none;
+}
+
+nav li {
+  float: none;
+}
+		
+
+nav li {
+  float: none;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 3px;
+  border-color: #ffffff;
+  font-size: 1em;
+  padding: 5px 5px;
+  margin-bottom: 5px;
+  background-color: #137d7c;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-size: 5em;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-size: 2em;
+
+}
+/*RESPONSIVE*/
+  
+@media screen and (min-width:710px) {
+	.main-nav ul {
+		display:block;
+	}	
+	
+	.main-nav {
+		float: right;
+		padding-top: 8px;
+		padding-right: 20px;
+	}
+}
+
+
+/*IRRELEVANT STUFF*/
+
+nav a:link {
+  color: #fff;
+}
+
+nav a:visited {
+  color: #fff;
+}
+
+
+nav a:hover {
+  color: #28CA9E;
+}
+
+nav a:active {
+ color: #f26d42;
+}  
+
+@media screen and (min-width: 400px) {
+	nav li {
+		font-size: 1.25em;
+	}
+}

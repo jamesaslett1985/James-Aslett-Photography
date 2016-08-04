@@ -1,0 +1,286 @@
+/*main.css is intended to be mobile styles as this site is using a mobile first approach*/
+.image{
+	position: relative; 
+	width: 100%; /* for IE 6 */
+}
+
+.image h2 {
+    margin: 0;
+    padding: 3%;
+    text-align: center;
+	border-radius: 5px;
+}
+
+/*main.css is intended to be mobile styles as this site is using a mobile first approach*/
+
+/********************************************
+GENERAL
+*********************************************/
+
+body {
+  font-family: 'ABeeZee', sans-serif;
+}
+
+#wrapper {
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+  }
+
+img[src*="small"] {
+  max-width: 97%;
+}
+
+#gallery img {
+	 border-radius: 22px;
+	 border: solid 3px;
+}
+
+.canvas {
+	max-width: 1500px;
+	margin: 0 auto;	
+}
+
+/********************************************
+HEADING
+*********************************************/
+
+header {
+  display: block;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+ float: left;
+ font-family:'Poiret One', sans-serif;
+ margin: 15px 0;
+ font-size: 2em;
+ font-weight: normal;
+ line-height: 0.8em;
+ display: block;
+ padding-left: 20px;
+}
+
+/********************************************
+FOOTER
+*********************************************/
+
+.footer {
+  width: 100%;
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding: 10px 0 10px;
+  color: #ccc;
+}
+
+.social-icon {
+  width: 70px;
+  height: 21px;
+  margin: 0 5px;
+}
+
+/********************************************
+PAGE: PORTFOLIO
+*********************************************/
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery li {
+  float: left;
+  width: 100%;
+  margin: 0 0 10px;
+  color: #bdc3c7;
+}
+
+#gallery li a p {
+  margin: 5px 0;
+  padding: 5%;
+  font-size: 1em;
+  color: #252839;
+  background-color: #E6CEC4;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/********************************************
+PAGE: EDITS
+*********************************************/
+
+.edits-text {
+	text-align: center;
+}
+
+menu, ol, ul {
+	padding: 0px;
+}
+
+.edits-text p {
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+.twentytwenty-overlay:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/********************************************
+PAGE: ABOUT
+*********************************************/
+
+.profile-photo {
+  display: block;
+  width: 75%;
+  margin: 0 auto 30px;
+  border-radius: 13px;
+}
+
+.casa {
+  display: inline-block;
+  width: 35%;
+  vertical-align: middle;
+  border-radius: 3px;
+}
+
+.about-section img + h3 {
+  clear: left;
+}
+
+/********************************************
+PAGE: CONTACT
+*********************************************/
+
+.wrapper-form {
+  padding-bottom: 5px;
+}
+
+form {
+  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px); /*for compatibility in browsers like Firefox*/
+  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px); /*for compatibility in browsers like Firefox*/
+  margin: 0 auto;
+  max-width: 370px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #09C;
+  text-decoration: none;
+  border-radius: 13px;
+  padding: 10px;
+  border: 1px solid #999;
+  border: inset 1px solid #333;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3); /*for compatibility in browsers like Firefox*/
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3); /*for compatibility in browsers like Firefox*/
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  display: inline-block;
+  width: 115px;
+}
+
+/********************************************
+COLOURS
+*********************************************/
+
+/* site body */
+  body {
+    background-color: #121b21;/*#0B4C7B;*/
+	color: #fff;
+}
+
+/*canvas*/
+.canvas {
+	Background-color: #495764;
+}
+
+/*header */
+header {
+  background: #935347;/*#252839;*/
+  background: -webkit-linear-gradient(left top, #374d5c, #040404); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#935347, #935347); /* For Opera 11.1 to 12.0 */
+  border-bottom: solid 3px;
+  border-color: #f26d42;
+}
+
+/* logo text */
+h1 {
+  color: #ffffff;
+  /*text-shadow: 11px 5px 5px #121b21;*/
+  font-weight: bold;
+}
+
+/* links *
+
+/*Contact Page links*/
+a {
+color: #B59B15;
+}
+
+/*gallery img border*/
+img[src*="small"] {
+	color: #ffffff;
+}
+
+/*gallery img H2 text*/
+
+.image h2 {
+	color: #fffde4;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/*grayscale img hover*/
+.image img { 
+    -webkit-filter: grayscale(0%);  /* For Webkit browsers */
+	-webkit-transition: all .6s ease;  /* Transition for Webkit browsers */
+}
+
+.image img:hover {
+    -webkit-filter: grayscale(80%); /* For Webkit browsers */
+    filter: gray; /* For IE 6 - 9 */
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+}
+
+/* CLEARFIX */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/********************************************
+JQUERY OVERRIDES
+*********************************************/
+
+/*TwentyTwenty*/
+.twentytwenty-container img {
+	width: 100%;
+}
+
+.twentytwenty-wrapper {
+		max-width: 1000px;
+		margin: 20px auto;
+} 
+
+.twentytwenty-container {
+    border-style: solid;
+    border-width: 3px;
+	border-radius: 22px;
+}
+}
