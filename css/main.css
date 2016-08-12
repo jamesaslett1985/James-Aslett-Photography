@@ -132,7 +132,7 @@ menu, ol, ul {
 }
 
 .edits-text p {
-	max-width: 70%;
+	max-width: 80%;
 	margin: 0 auto;
 }
 
@@ -153,7 +153,7 @@ PAGE: ABOUT
 
 .casa {
   display: inline-block;
-  width: 35%;
+  width: 25%;
   vertical-align: middle;
   border-radius: 3px;
 }
@@ -192,6 +192,11 @@ form {
 label {
   display: inline-block;
   width: 115px;
+}
+
+.contact-info {
+	list-style-type: none;
+
 }
 
 /********************************************

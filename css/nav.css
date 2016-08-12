@@ -54,6 +54,7 @@ nav li:not(.icon) {
 	background-color: #252c32;
 }
 
+/*RESPONSIVE*/
 @media screen and (min-width: 400px) {
 	/*Show all nav icons on wider screens and hide hamburger*/
 nav li:not(.icon) {
@@ -89,8 +90,7 @@ nav li {
   font-size: 2em;
 
 }
-/*RESPONSIVE*/
-  
+
 @media screen and (min-width:710px) {
 	.main-nav ul {
 		display:block;
