@@ -78,8 +78,6 @@ function shuffle(array) {
 	});
 	
 
-	
-
 //TOP NAV JQuery
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
@@ -107,3 +105,35 @@ $(".icon").click(function(){
 });
 
 
+
+//Force mobile menu to shut if left open on screen resize
+$(window).resize(function(){
+	if($(window).width() > 400) {
+//Remove Responsive class
+	$("#myTopnav").removeClass(" responsive");
+//Force X icon back to hamburger
+	var a = $(".icon a");
+	a.removeClass("icon-cross");
+	a.removeClass("open");
+//Else leave it there	
+    } else {
+    console.log("bigger");
+	}
+});
+
+
+
+
+/*
+$(window).resize(function() {
+    var x = document.getElementById("myTopnav");
+		if ($("body").width() > 500) {
+        x.removeClass(" responsive");
+    } else {
+        x.className = "topnav mama";
+    }
+});	
+
+
+
+*/
