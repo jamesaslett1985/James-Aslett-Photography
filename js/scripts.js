@@ -108,7 +108,7 @@ $(".icon").click(function(){
 
 //Force mobile menu to shut if left open on screen resize
 $(window).resize(function(){
-	if($(window).width() > 400) {
+	if($(window).width() > 382) {
 //Remove Responsive class
 	$("#myTopnav").removeClass(" responsive");
 //Force X icon back to hamburger
