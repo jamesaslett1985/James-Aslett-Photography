@@ -121,19 +121,13 @@ $(window).resize(function(){
 	}
 });
 
+//TABLES SCRIPTS
+$(document).ready(function() 
+    { 
+        $("#myTable").tablesorter(); 
+    } 
+); 
+    
 
 
 
-/*
-$(window).resize(function() {
-    var x = document.getElementById("myTopnav");
-		if ($("body").width() > 500) {
-        x.removeClass(" responsive");
-    } else {
-        x.className = "topnav mama";
-    }
-});	
-
-
-
-*/
