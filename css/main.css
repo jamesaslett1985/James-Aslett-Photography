@@ -62,7 +62,7 @@ header {
   margin: 0;
 }
 
-h1 {
+.titleName {
  float: left;
  font-family:'Poiret One', sans-serif;
  margin: 15px 0;
@@ -224,7 +224,7 @@ header {
 }
 
 /* logo text */
-h1 {
+.titleName {
   color: #ffffff;
   /*text-shadow: 11px 5px 5px #121b21;*/
   font-weight: bold;
