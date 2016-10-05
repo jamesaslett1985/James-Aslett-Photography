@@ -28,7 +28,7 @@
                 <h1 class="titleName">James Aslett</h1>
             </a>
             <nav class="main-nav clearfix">
-   <ul class="topnav" id="myTopnav">
+	<ul class="topnav" id="myTopnav">
             <li><a href="index.html" class="selected">Portfolio</a></li>
 			<li><a href="edits.html">Edits</a></li>
             <li><a href="about.html">About</a></li>
@@ -39,7 +39,7 @@
           </ul>  
         </nav>	
         </header>
-        <div id="wrapper">
+        <div id="mediaWrapper">
             
 			<h1>HTML Video and Audio</h1>
     
@@ -47,7 +47,7 @@
 				  
 				   <h2>Video Example</h2>
       
-       <video class="mejs-wmp" width="852" height="480" controls>
+       <video class="medCenter" width="852" height="480" controls>
         <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.mp4" type="video/mp4">
         <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.ogg" type="video/ogg">
         <track label="English" kind="subtitles" srclang="en" src="bridge-captions.vtt" default>
@@ -55,19 +55,22 @@
       
       <h2>Audio Example</h2>
       
-      <audio controls>
+      <audio class = "medCenter" controls>
         <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge-audio.mp3" type="audio/mp3">
       </audio>
-				  
+				
 				</div>
 
-
+    <script>
+      $('audio,video').mediaelementplayer({
+        success: function(player, node) {
+          $('#' + node.id + '-mode').html('mode: ' + player.pluginType);  
+        },
+        startLanguage: 'en',
+        translationSelector: true
+      });
+    </script>
 			   
-			   
-			   
-	
-			
-			
 		</div>	
     <footer class="footer">
 		<a href="http://www.flickr.com/photos/sad_muso/albums" target="_blank"><img src="img/flickr.png" width="200" height="61" alt="Flickr Logo" class="social-icon" title="See my photos on Flickr"></a>
