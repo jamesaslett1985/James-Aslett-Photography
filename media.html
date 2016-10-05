@@ -14,8 +14,9 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	
-	<script src="mejs/mediaelement-and-player.min.js"></script>
-	<link rel="stylesheet" href="mejs/mediaelementplayer.css" /></code>
+    <script src="mejs/jquery.js"></script>
+    <script src="mejs/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="mejs/mediaelementplayer.min.css" />
 	<link rel="stylesheet" href="mejs/mejs-skins.css">
 	
 </head>
@@ -24,7 +25,7 @@
     <div class="wrapper-main clearfix">
         <header>
             <a href="index.html" id="logo">
-                <h1>James Aslett</h1>
+                <h1 class="titleName">James Aslett</h1>
             </a>
             <nav class="main-nav clearfix">
    <ul class="topnav" id="myTopnav">
@@ -44,26 +45,19 @@
     
 				<div class="wrapper">
 				  
-				  <h2>Video Example with subtitles</h2>
-				  
-				  <video class="mejs-wmp" width="852" height="480" controls>
-					<source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.mp4" type="video/mp4">
-					<source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.ogg" type="video/ogg">
-					<track label="English" kind="subtitles" srclang="en" src="bridge-captions.vtt" default>
-				  </video>
-				  
-				 <h2>Google Drive Example</h2>
-				  
-				  <video class="mejs-ted" width="852" height="480" controls>
-					<source src="https://r3---sn-aigl6n7s.c.drive.google.com/videoplayback?requiressl=yes&id=5f02f79c5544d05e&itag=18&source=webdrive&ttl=transient&app=explorer&ip=86.183.251.112&ipbits=0&expire=1475633532&cp=QVJMV0dfUlVRQ1hNOnRiaDhjSUFQVFpW&sparams=requiressl,id,itag,source,ttl,ip,ipbits,expire,cp&signature=1C44A14C0C648C9F6A9789E956D34AE35F4796D.2C274F8140D6D58B1527C3297FA7EF920E323044&key=ck2&mm=30&mn=sn-aigl6n7s&ms=nxu&mt=1475618848&mv=m&nh=IgpwcjA0LmxocjI1Kg4xOTUuOTkuMTI2LjE4NA&pl=25&sc=yes&cpn=1XUeq2IrlFjjyWVY&c=WEB&cver=1.20161001" type="video/mp4">
-				
-				  </video>
-				  
-				  <h2>Audio Example</h2>
-				  
-				  <audio controls>
-					<source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge-audio.mp3" type="audio/mp3">
-				  </audio>
+				   <h2>Video Example</h2>
+      
+       <video class="mejs-wmp" width="852" height="480" controls>
+        <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.mp4" type="video/mp4">
+        <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.ogg" type="video/ogg">
+        <track label="English" kind="subtitles" srclang="en" src="bridge-captions.vtt" default>
+      </video>
+      
+      <h2>Audio Example</h2>
+      
+      <audio controls>
+        <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge-audio.mp3" type="audio/mp3">
+      </audio>
 				  
 				</div>
 
