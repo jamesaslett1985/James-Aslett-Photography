@@ -17,7 +17,7 @@
     <script src="mejs/jquery.js"></script>
     <script src="mejs/mediaelement-and-player.min.js"></script>
     <link rel="stylesheet" href="mejs/mediaelementplayer.min.css" />
-	<link rel="stylesheet" href="mejs/mejs-skins.css">
+	<link rel="stylesheet" href="css/mejs-james.css">
 	
 </head>
 <body>
@@ -47,7 +47,7 @@
 				  
 				   <h2>Video Example</h2>
       
-       <video class="medCenter" width="852" height="480" controls>
+       <video class="medCenter mejs-james" width="852" height="480" controls>
         <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.mp4" type="video/mp4">
         <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.ogg" type="video/ogg">
         <track label="English" kind="subtitles" srclang="en" src="bridge-captions.vtt" default>
@@ -55,7 +55,7 @@
       
       <h2>Audio Example</h2>
       
-      <audio class = "medCenter" controls>
+      <audio class = "medCenter mejs-james" controls>
         <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge-audio.mp3" type="audio/mp3">
       </audio>
 				
@@ -66,6 +66,7 @@
         success: function(player, node) {
           $('#' + node.id + '-mode').html('mode: ' + player.pluginType);  
         },
+		features: ['playpause', 'tracks', 'volume', 'progress', 'fullscreen'],
         startLanguage: 'en',
         translationSelector: true
       });
